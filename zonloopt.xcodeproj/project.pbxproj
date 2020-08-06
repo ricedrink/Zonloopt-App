@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3EEF444C24DC5DFA00D4444E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEF444B24DC5DFA00D4444E /* AppDelegate.swift */; };
 		3EEF444E24DC5DFA00D4444E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEF444D24DC5DFA00D4444E /* SceneDelegate.swift */; };
-		3EEF445024DC5DFB00D4444E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEF444F24DC5DFA00D4444E /* ViewController.swift */; };
 		3EEF445324DC5DFB00D4444E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EEF445124DC5DFB00D4444E /* Main.storyboard */; };
 		3EEF445624DC5DFB00D4444E /* zonloopt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EEF445424DC5DFB00D4444E /* zonloopt.xcdatamodeld */; };
 		3EEF445824DC5DFD00D4444E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EEF445724DC5DFD00D4444E /* Assets.xcassets */; };
@@ -27,7 +26,6 @@
 		3EEF444824DC5DFA00D4444E /* zonloopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zonloopt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEF444B24DC5DFA00D4444E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EEF444D24DC5DFA00D4444E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3EEF444F24DC5DFA00D4444E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3EEF445224DC5DFB00D4444E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EEF445524DC5DFB00D4444E /* zonloopt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = zonloopt.xcdatamodel; sourceTree = "<group>"; };
 		3EEF445724DC5DFD00D4444E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 			children = (
 				3EEF444B24DC5DFA00D4444E /* AppDelegate.swift */,
 				3EEF444D24DC5DFA00D4444E /* SceneDelegate.swift */,
-				3EEF444F24DC5DFA00D4444E /* ViewController.swift */,
 				3EEF446224DC60D800D4444E /* StartViewController.swift */,
 				3EEF446424DC616700D4444E /* SignUpViewController.swift */,
 				3EEF446624DC638500D4444E /* LoginViewController.swift */,
@@ -98,7 +95,6 @@
 				9067C3C20A2540F143B044DD /* Pods-zonloopt.debug.xcconfig */,
 				08C186E0BFAEFD0EF4ED1CAA /* Pods-zonloopt.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -230,7 +226,6 @@
 				3EEF446524DC616700D4444E /* SignUpViewController.swift in Sources */,
 				3EEF446324DC60D800D4444E /* StartViewController.swift in Sources */,
 				3EEF446924DC63BB00D4444E /* HomeViewController.swift in Sources */,
-				3EEF445024DC5DFB00D4444E /* ViewController.swift in Sources */,
 				3EEF444C24DC5DFA00D4444E /* AppDelegate.swift in Sources */,
 				3EEF445624DC5DFB00D4444E /* zonloopt.xcdatamodeld in Sources */,
 				3EEF444E24DC5DFA00D4444E /* SceneDelegate.swift in Sources */,

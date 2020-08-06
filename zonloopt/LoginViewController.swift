@@ -15,8 +15,14 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailLogin: UITextField!
     @IBOutlet weak var passwordLogin: UITextField!
     
+    
     @IBAction func logInButton(_ sender: UIButton) {
         validateInput()
+        //send user to next page
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "mainHome")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
     }
     
     override func viewDidLoad() {

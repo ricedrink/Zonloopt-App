@@ -35,6 +35,12 @@ class SignUpViewController: UIViewController {
         
         //sends email and password to Firebase
         signUp()
+        
+        //send user to next page
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "mainHome")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
     }
     
     ///Firebase sign up function

@@ -11,8 +11,11 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBAction func logOutAction(_ sender: UIButton) {
-        
-    //missing functions
+        //send user back
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "ZonLoopt")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
     }
     
     override func viewDidLoad() {

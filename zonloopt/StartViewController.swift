@@ -8,11 +8,29 @@
 
 import UIKit
 
+
 class StartViewController: UIViewController {
 
+    @IBAction func joinNow(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "signUp")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
+    
+    @IBAction func login(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "logIn")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
+    
     override func viewDidAppear(_ animated: Bool){
      super.viewDidAppear(animated)
     }
+
+        // Do any additional setup after loading the view.
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
