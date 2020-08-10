@@ -42,7 +42,7 @@
                                     <action selector="login:" destination="ioy-tG-9iK" eventType="touchUpInside" id="BYv-MX-oQ5"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zonloopt" translatesAutoresizingMaskIntoConstraints="NO" id="Fpw-SQ-hDd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zonloopt_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Fpw-SQ-hDd">
                                 <rect key="frame" x="60" y="179" width="294" height="293"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -128,6 +128,14 @@
                                 </state>
                                 <connections>
                                     <action selector="signUpAction:" destination="I5W-Wp-x4s" eventType="touchUpInside" id="Na6-aa-oYz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKC-Yt-Caj">
+                                <rect key="frame" x="20" y="44" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nav_back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="I5W-Wp-x4s" eventType="touchUpInside" id="ssO-jA-E22"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -219,6 +227,14 @@
                                     <action selector="logInButton:" destination="BOR-jQ-W6b" eventType="touchUpInside" id="4nl-MY-Uso"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7j-m1-T5f">
+                                <rect key="frame" x="20" y="44" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nav_back"/>
+                                <connections>
+                                    <action selector="backButtonLogin:" destination="BOR-jQ-W6b" eventType="touchUpInside" id="Aa6-6h-eQo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="tpk-eR-J4y"/>
@@ -254,6 +270,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="zonloopt" width="890" height="856"/>
+        <image name="nav_back" width="34" height="34"/>
+        <image name="zonloopt_icon" width="890" height="856"/>
     </resources>
 </document>

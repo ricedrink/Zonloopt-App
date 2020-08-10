@@ -20,9 +20,17 @@ class LoginViewController: UIViewController {
         validateInput()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        checkUserInfo()
+    @IBAction func backButtonLogin(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "ZonLoopt")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
     }
+   
+    //checks if you are logged in already
+//    override func viewDidAppear(_ animated: Bool) {
+//        checkUserInfo()
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
