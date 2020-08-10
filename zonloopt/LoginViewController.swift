@@ -18,11 +18,10 @@ class LoginViewController: UIViewController {
     
     @IBAction func logInButton(_ sender: UIButton) {
         validateInput()
-        //send user to next page
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "mainHome")
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        checkUserInfo()
     }
     
     override func viewDidLoad() {
@@ -55,8 +54,13 @@ class LoginViewController: UIViewController {
     }
     
     func checkUserInfo() {
-        if Auth.auth().currentUser == nil {
+        if Auth.auth().currentUser != nil {
             print(Auth.auth().currentUser?.uid)
+            //send user to next page
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(identifier: "mainHome")
+            vc.modalPresentationStyle = .overFullScreen
+            present(vc, animated: true)
         }
     }
     /*
