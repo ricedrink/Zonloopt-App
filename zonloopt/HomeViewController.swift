@@ -43,6 +43,10 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         let region = MKCoordinateRegion(center: coordinate, span: span)
         
         mapView.setRegion(region, animated: true)
+        
+        let pin = MKPointAnnotation()
+        pin.coordinate = coordinate
+        mapView.addAnnotation(pin)
     }
     
     @IBAction func logOutAction(_ sender: UIButton) {
