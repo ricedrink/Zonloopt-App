@@ -138,6 +138,13 @@
                                     <action selector="backButton:" destination="I5W-Wp-x4s" eventType="touchUpInside" id="ssO-jA-E22"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By signing up, you agree to Zon Loopt’s Privacy Policy and Terms of Use." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYV-Eb-DVh">
+                                <rect key="frame" x="112" y="498" width="197" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="5LE-D1-IC4"/>
@@ -162,32 +169,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fw-gn-gXr">
-                                <rect key="frame" x="162" y="799" width="91" height="72"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YbG-nQ-lpu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="733"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </mapView>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8zx-SI-LoA">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="LiveTrack Map" image="map" catalog="system" selectedImage="image-removebg-preview" id="76F-K3-ur4"/>
+                                    <tabBarItem title="Route Generator" image="goforward" catalog="system" id="xwt-MQ-MfN"/>
+                                    <tabBarItem title="My Profile" image="person.fill" catalog="system" id="1vK-2L-LDD"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fw-gn-gXr">
+                                <rect key="frame" x="162" y="741" width="91" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98976141210000002" green="0.93895643949999996" blue="0.28211838010000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Logout">
-                                    <color key="titleColor" red="0.95496088270000001" green="0.33879733090000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="logOutAction:" destination="RkK-Dg-NiM" eventType="touchUpInside" id="bSx-Qc-acP"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YbG-nQ-lpu">
-                                <rect key="frame" x="0.0" y="44" width="414" height="733"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="JqP-JW-Qgx"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Profile / Home" image="person" catalog="system" id="PxJ-fn-t2u"/>
                     <connections>
                         <outlet property="mapView" destination="YbG-nQ-lpu" id="lFj-23-R5e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMx-6A-tOE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3504.347826086957" y="78.348214285714278"/>
+            <point key="canvasLocation" x="4422" y="1012"/>
         </scene>
         <!--LoginViewController-->
         <scene sceneID="Yq2-Ns-Baw">
@@ -217,9 +236,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZO-dj-FBN">
-                                <rect key="frame" x="127" y="368" width="160" height="71"/>
+                                <rect key="frame" x="127" y="286" width="160" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.98976141210000002" green="0.93895643949999996" blue="0.28211838010000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -235,6 +254,13 @@
                                     <action selector="backButtonLogin:" destination="BOR-jQ-W6b" eventType="touchUpInside" id="Aa6-6h-eQo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By logging in, you agree to Zon Loopt’s Privacy Policy and Terms of Use." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uV4-4d-hgw">
+                                <rect key="frame" x="109" y="331" width="197" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="tpk-eR-J4y"/>
@@ -268,9 +294,66 @@
             </objects>
             <point key="canvasLocation" x="924.63768115942037" y="110.49107142857143"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="YTm-gm-huT">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2Oj-ba-j6J" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rZh-aW-BS9">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RkK-Dg-NiM" kind="relationship" relationship="viewControllers" id="iDL-bp-3z3"/>
+                        <segue destination="fBL-z4-iJi" kind="relationship" relationship="viewControllers" id="lZL-XO-INx"/>
+                        <segue destination="u7X-RZ-pYr" kind="relationship" relationship="viewControllers" id="Xbk-bs-q4Z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJw-HO-oA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3562" y="130"/>
+        </scene>
+        <!--Route Generator-->
+        <scene sceneID="AgN-9A-1CH">
+            <objects>
+                <viewController id="fBL-z4-iJi" customClass="RouteGeneratorViewController" customModule="zonloopt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5jp-53-vZI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fGu-eq-DDu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Route Generator" image="circle.grid.hex" catalog="system" id="ddP-pP-jVM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8EU-rC-eYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4422" y="176"/>
+        </scene>
+        <!--LiveTrack Map-->
+        <scene sceneID="wCs-3s-BVZ">
+            <objects>
+                <viewController id="u7X-RZ-pYr" customClass="LiveTrackMapViewController" customModule="zonloopt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eyb-XR-w6d" customClass="Live">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wXs-fT-7Sk"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="LiveTrack Map" image="map" catalog="system" id="Ske-jX-DG1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PhV-7g-pRx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4422" y="-552"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="circle.grid.hex" catalog="system" width="128" height="112"/>
+        <image name="goforward" catalog="system" width="121" height="128"/>
+        <image name="image-removebg-preview" width="500" height="500"/>
+        <image name="map" catalog="system" width="128" height="113"/>
         <image name="nav_back" width="34" height="34"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="zonloopt_icon" width="890" height="856"/>
     </resources>
 </document>
