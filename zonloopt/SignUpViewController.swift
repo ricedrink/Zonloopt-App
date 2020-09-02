@@ -16,12 +16,14 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var passwordConfirm: UITextField!
     
+    //takes you back to home page
     @IBAction func backButton(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "ZonLoopt")
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

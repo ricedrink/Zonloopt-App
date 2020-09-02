@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E5525D924EC73CE00997F63 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5525D824EC73CE00997F63 /* ProfileViewController.swift */; };
 		3EEF444C24DC5DFA00D4444E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEF444B24DC5DFA00D4444E /* AppDelegate.swift */; };
 		3EEF444E24DC5DFA00D4444E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEF444D24DC5DFA00D4444E /* SceneDelegate.swift */; };
 		3EEF445324DC5DFB00D4444E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EEF445124DC5DFB00D4444E /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		08C186E0BFAEFD0EF4ED1CAA /* Pods-zonloopt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zonloopt.release.xcconfig"; path = "Target Support Files/Pods-zonloopt/Pods-zonloopt.release.xcconfig"; sourceTree = "<group>"; };
+		3E5525D824EC73CE00997F63 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3EEF444824DC5DFA00D4444E /* zonloopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zonloopt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEF444B24DC5DFA00D4444E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EEF444D24DC5DFA00D4444E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				3EEF446424DC616700D4444E /* SignUpViewController.swift */,
 				3EEF446624DC638500D4444E /* LoginViewController.swift */,
 				3EEF446824DC63BB00D4444E /* HomeViewController.swift */,
+				3E5525D824EC73CE00997F63 /* ProfileViewController.swift */,
 				3EEF445124DC5DFB00D4444E /* Main.storyboard */,
 				3EEF445724DC5DFD00D4444E /* Assets.xcassets */,
 				3EEF445924DC5DFD00D4444E /* LaunchScreen.storyboard */,
@@ -228,6 +231,7 @@
 				3EEF446924DC63BB00D4444E /* HomeViewController.swift in Sources */,
 				3EEF444C24DC5DFA00D4444E /* AppDelegate.swift in Sources */,
 				3EEF445624DC5DFB00D4444E /* zonloopt.xcdatamodeld in Sources */,
+				3E5525D924EC73CE00997F63 /* ProfileViewController.swift in Sources */,
 				3EEF444E24DC5DFA00D4444E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

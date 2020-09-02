@@ -11,7 +11,18 @@ import MapKit
 import CoreLocation
 
 class HomeViewController: UIViewController, CLLocationManagerDelegate {
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    @IBOutlet weak var milesTextField: UITextField!
 
+    @IBAction func profileButton(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "ZonLoopt")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
+    
     let manager = CLLocationManager()
     
     override func viewDidLoad() {
@@ -48,14 +59,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         pin.coordinate = coordinate
         mapView.addAnnotation(pin)
     }
-    
-    @IBAction func logOutAction(_ sender: UIButton) {
-        //send user back
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "ZonLoopt")
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
-    }
+
     
     
 

@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
         validateInput()
     }
     
+    //homepage
     @IBAction func backButtonLogin(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "ZonLoopt")
@@ -34,7 +35,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
