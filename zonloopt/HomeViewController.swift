@@ -12,33 +12,27 @@ import CoreLocation
 
 class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
+    ///search bar and textfield
     @IBOutlet weak var searchBar: UISearchBar!
-    
     @IBOutlet weak var milesTextField: UITextField!
-
-    @IBAction func profileButton(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "ZonLoopt")
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
-    }
     
+    ///location manager that keeps track of the user's location
     let manager = CLLocationManager()
     
     override func viewDidLoad() {
            super.viewDidLoad()
        }
        
-       override func viewDidAppear(_ animated: Bool) {
-           super.viewDidAppear(animated)
-           manager.desiredAccuracy = kCLLocationAccuracyBest
-           manager.delegate = self
-           manager.requestWhenInUseAuthorization()
-           manager.startUpdatingLocation()
-       }
+    ///once home screen the manager will find the user's location and update it
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.delegate = self
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
+    }
     
     @IBOutlet weak var mapView: MKMapView!
-    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             manager.stopUpdatingLocation()
@@ -46,6 +40,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+    ///rendering map, specify how the map looks here
     func render(_ location: CLLocation){
         let coordinate = CLLocationCoordinate2DMake(location.coordinate.latitude,
                                                     location.coordinate.longitude)

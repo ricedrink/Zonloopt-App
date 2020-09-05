@@ -16,6 +16,7 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    ///logout function for now will send you back to the main page
     @IBAction func logout(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
              let vc = storyboard.instantiateViewController(identifier: "ZonLoopt")
