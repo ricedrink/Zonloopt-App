@@ -83,6 +83,8 @@
 				3EEF446824DC63BB00D4444E /* HomeViewController.swift */,
 				3E5525D824EC73CE00997F63 /* ProfileViewController.swift */,
 				3EEF445124DC5DFB00D4444E /* Main.storyboard */,
+				2E74502924E2183B00390864 /* LiveTrackMapViewController.swift */,
+				2E74502724E217D000390864 /* RouteGeneratorViewController.swift */,
 				3EEF445724DC5DFD00D4444E /* Assets.xcassets */,
 				3EEF445924DC5DFD00D4444E /* LaunchScreen.storyboard */,
 				3EEF445C24DC5DFD00D4444E /* Info.plist */,
@@ -227,6 +229,8 @@
 			files = (
 				3EEF446724DC638500D4444E /* LoginViewController.swift in Sources */,
 				3EEF446524DC616700D4444E /* SignUpViewController.swift in Sources */,
+				2E74502A24E2183B00390864 /* LiveTrackMapViewController.swift in Sources */,
+				2E74502824E217D000390864 /* RouteGeneratorViewController.swift in Sources */,
 				3EEF446324DC60D800D4444E /* StartViewController.swift in Sources */,
 				3EEF446924DC63BB00D4444E /* HomeViewController.swift in Sources */,
 				3EEF444C24DC5DFA00D4444E /* AppDelegate.swift in Sources */,
