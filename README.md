@@ -1,2 +1,2 @@
 # Zon Loopt
-📱 iOS app built for better, safer running routes
+📱 🏃‍♀️Zon Loopt is a mobile app designed to generate safe running routes based on location input and desired distance.
